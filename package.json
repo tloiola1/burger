@@ -18,11 +18,12 @@
   },
   "homepage": "https://github.com/tloiola1/burger#readme",
   "dependencies": {
-    "body-parser": "^1.14.2",
-    "express": "^4.13.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "express-handlebars": "^2.0.1",
-    "method-override": "^2.0.1",
-    "mysql": "^2.10.0"
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.0"
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
