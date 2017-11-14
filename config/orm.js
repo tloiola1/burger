@@ -5,9 +5,9 @@ var orm = {
 	all: function(table, callback){
 		var queryString = 'SELECT * FROM burgers;';
 		connection.query(queryString, function(err, result){
-			if (err) {
-        	throw err;
-      	}
+			// if (err) {
+   //      	throw err;
+   //    	}
 			console.log(result);
 			callback(result);
 		});
