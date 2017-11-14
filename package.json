@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/tloiola1/burger/issues"
   },
-  "homepage": "https://github.com/tloiola1/burger/server.js",
+  "homepage": "http://github.com/tloiola1/burger/server.js",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
