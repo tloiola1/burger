@@ -1,6 +1,7 @@
 //Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
+var coloring = require('coloring');
 
 var port = process.env.PORT || 3002;
 
@@ -22,4 +23,5 @@ var routes = require('./controllers/burgers_controllers.js');
 app.use('/', routes);
 
 app.listen(port);
-console.log('Listened Port: '+ port);
+
+console.log('Listened Port:'+ coloring.green(coloring.bold(port)));

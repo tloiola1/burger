@@ -3,6 +3,7 @@ var password = require('../key.js');
 // console.log(password);
 // Create MySQL connection
 var mysql = require("mysql");
+var coloring = require('coloring');
 
 var connection = mysql.createConnection({
   port: 3306,
@@ -18,7 +19,7 @@ connection.connect(function(err) {
     console.error("error connecting: " + err.stack);
     return;
   }
-  console.log("Connected ID: " + connection.threadId);
+  console.log("Connected ID:" + coloring.green(coloring.bold(connection.threadId)));
 });
 
 // Export connection for our ORM to use.
