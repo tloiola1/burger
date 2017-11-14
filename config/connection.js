@@ -1,6 +1,4 @@
 //Dependecies
-var password = require('../key.js');
-// console.log(password);
 // Create MySQL connection
 var mysql = require("mysql");
 
@@ -8,7 +6,7 @@ var connection = mysql.createConnection({
   port: 3306,
   host: "localhost",
   user: "root",
-  password: password,
+  password: 'Alessandro2015',
   database: "burgers_db"
 });
 
