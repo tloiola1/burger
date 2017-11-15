@@ -1,7 +1,4 @@
 //Dependecies
-var password = require('../key.js');
-// console.log(password);
-// Create MySQL connection
 var mysql = require("mysql");
 var coloring = require('coloring');
 var connection;
@@ -15,7 +12,7 @@ if (process.env.JAWSDB_URL){
     port: 3306,
     host: "localhost",
     user: "root",
-  password: password,
+  password: "Alessandro2015",
     database: "burgers_db"
   });
 }
