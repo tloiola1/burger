@@ -5,10 +5,10 @@ var coloring = require('coloring');
 
 var connection = mysql.createConnection({
   port: 3306,
-  host: "localhost",
-  user: "root",
-  password: "Alessandro2015",
-  database: "burgers_db"
+  host: "us-cdbr-iron-east-05.cleardb.net",
+  user: "b6a1919e835123:2a3b3a52",
+  password: "2a3b3a52",
+  database: "heroku_7020a910d781eb0"
 });
 
 // Make connection.
