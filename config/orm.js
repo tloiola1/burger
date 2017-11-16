@@ -9,7 +9,7 @@ var orm = {
 			// if (err) {
    //      	throw err;
    //    	}
-			console.log("Aqui: "+result);
+			console.log(result);
 			callback(result);
 		});
 	},
