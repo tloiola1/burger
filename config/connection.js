@@ -2,14 +2,23 @@
 var mysql = require("mysql");
 var coloring = require('coloring');
 
-var connection = mysql.createConnection({
+var connection;
+
+//  Heroku Deployment
+if (process.env.JAWSDB_WHITE_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_WHITE_URL);
+} 
+else {
+//  Local Deployment
+  connection = mysql.createConnection({
     port: 3306,
-    host: "us-cdbr-iron-east-05.cleardb.net",
-    user: "b6a1919e835123",
-    password: "2a3b3a52",
-    database: "heroku_7020a910d781eb0"
+    host: "localhost",
+    user: "root",
+    password: "Alessandro2015",
+    database: "burgers_db"
   });
 }
+
 
 // Make connection.
 connection.connect(function(err) {

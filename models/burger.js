@@ -5,7 +5,7 @@ var burger = {
 	all: function(callback){
 		console.log("Burgers.JS")
 		orm.all('burgers', function(result){
-			callback(result);
+      callback(result);
 		});
 	},
 	create: function(cols, vals, callback) {

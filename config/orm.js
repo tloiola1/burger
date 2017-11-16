@@ -3,12 +3,13 @@ var connection = require('../config/connection.js');
 
 var orm = {
 	all: function(table, callback){
-		var queryString = 'SELECT * FROM' + table +';';
+		console.log("Table: "+ table);
+		var queryString = 'SELECT * FROM ' + table +';';
 		connection.query(queryString, function(err, result){
 			// if (err) {
    //      	throw err;
    //    	}
-			console.log(result);
+			console.log("Aqui: "+result);
 			callback(result);
 		});
 	},
