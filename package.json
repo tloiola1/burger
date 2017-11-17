@@ -28,5 +28,8 @@
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
+  },
+  "engine":{
+    "node":"6.11.0"
   }
 }
