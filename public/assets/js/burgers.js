@@ -11,7 +11,7 @@ $(function() {
 
     // Send the PUT request.
     $.ajax({
-      url:"https://eat-da-burger-tloiola.herokuapp.com/api/burgers" + id,
+      url:"/api/burgers/" + id,
       method: "PUT",
       data: newdevouredState
     }).then(
@@ -34,7 +34,7 @@ $(function() {
     console.log(newburger.devoured);
     // Send the POST request.
     $.ajax({
-      url:"https://eat-da-burger-tloiola.herokuapp.com/api/burgers",
+      url:"/api/burgers",
       method: "POST",
       data: newburger
     }).then(

@@ -1,10 +1,11 @@
-//Dependencies
-var express = require('express');
-var router = express.Router();
+
 var burger = require('../models/burger.js');
 
+
+module.exports = function(app){
+
 //Create routes and their logics
-router.get('/', function(req,res){
+app.get('/', function(req,res){
 	burger.all(function(data){
 		var all_burgers = {
 			burgers: data
@@ -13,7 +14,7 @@ router.get('/', function(req,res){
 		res.render('index', all_burgers);
 	});
 });
-router.post("/api/burgers", function(req, res) {
+app.post("/api/burgers", function(req, res) {
 	console.log("Burgers Controllers Create: "+req.body.burger_name);
 	console.log("Burgers Controllers Create: "+req.body.devoured);
 	burger.create([
@@ -26,7 +27,7 @@ router.post("/api/burgers", function(req, res) {
 	});
 });
 
-router.put("/api/burgers/:id", function(req, res) {
+app.put("/api/burgers/:id", function(req, res) {
 	var condition = "id = " + req.params.id;
 
 	console.log("condition", condition);
@@ -45,4 +46,4 @@ router.put("/api/burgers/:id", function(req, res) {
 	});
 });
 
-module.exports = router;
+}

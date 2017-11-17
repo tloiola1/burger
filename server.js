@@ -3,7 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var coloring = require('coloring');
 
-var port = process.env.PORT || 3002;
+var port = process.env.PORT || 8080;
 
 var app = express();
 
@@ -18,9 +18,8 @@ app.engine('handlebars', expHbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 //Import routes to access server
-var routes = require('./controllers/burgers_controllers.js');
+require('./controllers/burgers_controllers.js')(app);
 
-app.use('/', routes);
 
 app.listen(port); 
 
