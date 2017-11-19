@@ -26,7 +26,7 @@ But first, it passes again at the server which calls for the specific router ins
 Inside the controller, it is then render all the data information to the view directory where contains the index.html 
 file to display all the database contents. Now it is connected to a localhost on an id determined by your computer.
 
-Open your browser on localhost:3002
+Open your browser on localhost:8080
 
 Now inside the browser, you can interact with this application by adding products into it (more specific, burgers, yummy!!).
  You notice that each burger on the left that has not been eaten yet has a button, that if clicked, it is going to restart 
